@@ -30,6 +30,9 @@ function addItemToShoppingList(){
     console.log("Item HTML: ", itemHtml);
     let itemListRef = document.getElementById("shopping-list");
     itemListRef.insertAdjacentHTML("afterend", itemHtml)
+
+    //nothing happened because we need to call the function to delete items
+    setDeleteButtonEvent(id);
 }
 //attach an event to the button
 function setDeleteButtonEvent(id){
