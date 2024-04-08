@@ -54,7 +54,7 @@ function createListItemHtml(itemName, itemAmount, id) {
 
 //create a function that removes the list item
 function removeListItem(id){
-    let listItem = document.getElementById("item" +id);
+    let listItem = document.getElementById("item"+id);
     //function called parentnodes. Nodes way that javascript refers to HTML elements & this is the parent node of the element we are referring to
     listItem.parentNode.removeChild(listItem);
 
